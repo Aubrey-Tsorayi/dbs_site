@@ -1,7 +1,6 @@
 <template>
     <div class="min-h-screen flex items-center justify-center">
-        <form @submit.prevent="submitForm" class="bg-blue p-8 rounded shadow-md">
-            <h2 class="text-2xl font-semibold mb-4">Contact Form</h2>
+        <form @submit.prevent="submitForm" class="p-8 rounded shadow-lg">
 
             <div class="mb-4">
                 <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
@@ -24,7 +23,7 @@
                 <span v-if="!isValidMessage" class="text-red-500 text-sm">Message is required</span>
             </div>
 
-            <button type="submit" class="bg-title text-white py-2 px-4 rounded flex items-center gap-2">Send a message<svg xmlns="http://www.w3.org/2000/svg"
+            <button type="submit" class="bg-blue hover:bg-title text-white py-2 px-4 rounded flex items-center gap-2">Send a message<svg xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
                     <path
                         d="M2.87 2.298a.75.75 0 0 0-.812 1.021L3.39 6.624a1 1 0 0 0 .928.626H8.25a.75.75 0 0 1 0 1.5H4.318a1 1 0 0 0-.927.626l-1.333 3.305a.75.75 0 0 0 .811 1.022 24.89 24.89 0 0 0 11.668-5.115.75.75 0 0 0 0-1.175A24.89 24.89 0 0 0 2.869 2.298Z" />

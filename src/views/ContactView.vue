@@ -26,10 +26,7 @@ const phones = [
 </script>
 
 <template>
-    <div class="flex-row font-urbanist text-title">
-        <div>
-            <h1 class="flex justify-center text-4xl p-2">Get in touch with us</h1>
-        </div>
+    <div class="font-urbanist text-title">
         <div class="grid grid-cols-2 items-center ml-20">
             <div class="grid grid-cols-2 gap-5 p-10 justify-end">
                 <EmailCard v-for="email in emails" :key="email.title" :title="email.title" :email="email.email" class="hover:scale-105"/>
