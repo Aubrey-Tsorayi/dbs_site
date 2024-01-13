@@ -27,16 +27,16 @@ const phones = [
 
 <template>
     <div class="font-urbanist text-title">
-        <div class="grid grid-cols-2 items-center ml-20">
-            <div class="grid grid-cols-2 gap-5 p-10 justify-end">
-                <EmailCard v-for="email in emails" :key="email.title" :title="email.title" :email="email.email" class="hover:scale-105"/>
-                <WhatsappCard v-for="phone in phones" :key="phone.title" :title="phone.title" :whatsapp="phone.whatsapp" class="hover:scale-105"/>
-            </div>
-            <div>
-                <Form/>
-            </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 items-center ml-4 sm:ml-20">
+        <div class="flex flex-wrap space-y-5 p-4 justify-center lg:grid lg:grid-cols-2">
+            <EmailCard v-for="email in emails" :key="email.title" :title="email.title" :email="email.email" class="hover:scale-105"/>
+            <WhatsappCard v-for="phone in phones" :key="phone.title" :title="phone.title" :whatsapp="phone.whatsapp" class="hover:scale-105"/>
+        </div>
+        <div>
+            <Form/>
         </div>
     </div>
+</div>
 </template>
 
 <style lang="scss" scoped></style>

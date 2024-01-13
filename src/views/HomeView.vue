@@ -26,7 +26,7 @@ const features = [
   <main class="flex-row">
     <div class="flex-row">
       <div class="flex justify-center mt-28">
-        <h1 class="font-urbanist text-4xl text-title">Welcome to DBSolutions</h1>
+        <h1 class="font-urbanist text-4xl text-title text-center">Welcome to DBSolutions</h1>
       </div>
       <div class="flex justify-center pt-14">
         <p class="font-urbanist tex-sm ">Your IT solutions partner!</p>
@@ -40,7 +40,7 @@ const features = [
         <p class="font-urbanist text-sm">Transform your infrastruce with DBSolutions</p>
       </div>
       <div class="flex justify-center">
-        <div class="grid grid-cols-2 gap-16 w-fit p-5">
+        <div class="space-y-5 lg:grid lg:grid-cols-2 lg:gap-16 w-fit p-5">
           <Feature v-for="feature in features" :key="feature.title" :title="feature.title" :desc="feature.desc" />
         </div>
       </div>

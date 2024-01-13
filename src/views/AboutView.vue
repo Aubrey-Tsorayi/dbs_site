@@ -1,6 +1,7 @@
 <script setup>
 import AboutItem from '@/components/AboutItem.vue';
 import Member from '@/components/Member.vue';
+import { ref } from 'vue';
 
 const abouts = [
   {
@@ -28,16 +29,16 @@ const members = [
     role: 'Developer',
     img: 'aubrey.jpg'
   },
-
 ]
+
 </script>
 
 <template>
   <div class="flex-row min-h-max">
-    <div class="pt-5 pl-5 ml-20">
-      <h1 class="text-3xl font-urbanist text-title font-bold">Who is DBSolutions?</h1>
+    <div class="pt-5 pl-5 lg:ml-20">
+        <h1 class="text-3xl font-urbanist text-title font-bold">Who is DBSolutions?</h1>
     </div>
-    <div class="p-5 ml-20 mr-32">
+    <div class="p-5 lg:ml-20 lg:mr-32">
       <p class="font-urbanist text-title">DBSolutions is a private IT company that was established in 2023 and it helps
         businesses by offering tailored solutions. DBSolutions uses the latest technologies to build strong and flexible
         IT systems and it covers areas like UI/UX designing, web designing, managing data, and creating software.
@@ -45,18 +46,20 @@ const members = [
         make operations smoother and help them go digital. The team at DBSolutions is skilled and works hard to do a great
         job in everything IT-related.</p>
     </div>
-    <div class="flex justify-center gap-10 p-5">
+    <div class="flex flex-wrap justify-center gap-10 p-5">
       <AboutItem v-for="about in abouts" :key="about.title" :title="about.title" :desc="about.desc" />
     </div>
     <div class="flex justify-center font-urbanist pt-5">
       <h1 class="text-3xl text-title font-bold">Our Team</h1>
     </div>
     <div class="flex justify-center pt-5">
-      <div class="grid grid-cols-2 gap-10">
-        <Member v-for="member in members" :key="member.name" :name="member.name" :role="member.role" :img="member.img"/>
+      <div class="flex flex-wrap justify-center lg:grid lg:grid-cols-2 gap-5 lg:gap-10">
+        <Member v-for="member in members" :key="member.name" :name="member.name" :role="member.role" :img="member.img" />
       </div>
     </div>
   </div>
 </template>
 
-<style></style>
+<style>
+
+</style>
