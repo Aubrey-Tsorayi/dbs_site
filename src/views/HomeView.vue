@@ -40,7 +40,7 @@ const features = [
         <p class="font-urbanist text-sm">Transform your infrastruce with DBSolutions</p>
       </div>
       <div class="flex justify-center">
-        <div class="space-y-5 lg:grid lg:grid-cols-2 lg:gap-16 w-fit p-5">
+        <div class="space-y-5  lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-16 w-fit p-5">
           <Feature v-for="feature in features" :key="feature.title" :title="feature.title" :desc="feature.desc" />
         </div>
       </div>

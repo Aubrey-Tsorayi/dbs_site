@@ -49,6 +49,7 @@ const closeMenu = () => {
                     class="hover:text-title hover:cursor-pointer font-urbanist">Solutions</RouterLink>
                 <RouterLink @click.native="closeMenu" to="/contact"
                     class="hover:text-title hover:cursor-pointer font-urbanist">Contact Us</RouterLink>
-        </ul>
-    </div>
-</nav></template>
+            </ul>
+        </div>
+    </nav>
+</template>
